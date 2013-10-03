@@ -77,39 +77,58 @@ margin:20px;
 height:250px;
 }
 
+.box {
+position:absolute;
+width:100%;
+height:100%;
+}
+
+.main_wrapper {
+position:absolute;
+width:99.5%;
+height:99%;
+overflow:hidden;
+}
+
 </style>
 
 <script>
 
 $(document).ready(function() {
-	$('.page2').toggle();
-	$('.page3').toggle();
-	$('.page4').toggle();
-	$('.page5').toggle();
+
+	$('.page2').css("left","150%");
+	$('.page3').css("left","150%");
+	$('.page4').css("left","150%");
+	$('.page5').css("left","150%");
 
 	$('.b1').click(function(){
-		$('.page1').toggle();
-		$('.page2').toggle();
+		$('.page1').animate({left:'-150%'});
+		$('.page2').css("left","150%");
+		$('.page2').animate({left:'0%'});
 	});
 
 	$('.b2').click(function(){
-		$('.page2').toggle();
-		$('.page3').toggle();
+		$('.page2').animate({left:'-150%'});
+		$('.page3').css("left","150%");
+		$('.page3').animate({left:'0%'});
 	});
 
 	$('.b3').click(function(){
-		$('.page3').toggle();
-		$('.page4').toggle();
+		$('.page3').animate({left:'-150%'});
+		$('.page4').css("left","150%");
+		$('.page4').animate({left:'0%'});
 	});
 
 	$('.b4').click(function(){
-		$('.page4').toggle();
-		$('.page5').toggle();
+		$('.page4').animate({left:'-150%'});
+		$('.page5').css("left","150%");
+		$('.page5').animate({left:'0%'});
 	});
 
 	$('.b5').click(function(){
-		$('.page5').toggle();
-		$('.page1').toggle();
+		$('.page5').animate({left:'-150%'});
+		$('.page1').css("left","150%");
+		$('.page1').animate({left:'0%'});
 	});
 });
 
@@ -117,7 +136,9 @@ $(document).ready(function() {
 
 <body>
 
-<div class="page1">
+<div class="main_wrapper">
+
+<div class="box page1">
 
 	<span class="content_wrapper">
 		<h1 class="textHead opacImagText">What Can Green Energy Do?</h1>
@@ -147,7 +168,7 @@ $(document).ready(function() {
 
 </div>
 
-<div class="page2">
+<div class="box page2">
 
 	<span class="content_wrapper">
 		<h1 class="textHead opacImagText">Problems With Green Energy</h1>
@@ -177,7 +198,7 @@ $(document).ready(function() {
 
 </div>
 
-<div class="page3">
+<div class="box page3">
 
 	<span class="content_wrapper">
 		<h1 class="textHead opacImagText">Solutions To Those Problems</h1>
@@ -207,7 +228,7 @@ $(document).ready(function() {
 
 </div>
 
-<div class="page4">
+<div class="box page4">
 
 	<span class="content_wrapper">
 		<h1 class="textHead opacImagText">The Future Of Green Energy For You</h1>
@@ -237,7 +258,7 @@ $(document).ready(function() {
 
 </div>
 
-<div class="page5">
+<div class="box page5">
 
 	<span class="content_wrapper">
 		<h1 class="textHead opacImagText">What Green Energy Means For You</h1>
@@ -264,6 +285,8 @@ $(document).ready(function() {
 			<h1>Tell Me Again (this is a place hodler)</h1>
 		</div>
 	</span>
+
+</div>
 
 </div>
 
