@@ -1,0 +1,271 @@
+<html>
+<script src="jquery-2.0.3.min.js"></script>
+<style>
+body {
+background:url('file:///home/alex/src/writingProject/air_grass.jpg');
+background-size:cover;
+}
+.content_wrapper {
+position:absolute;
+width:50%;
+height:50%;
+left:0%;
+}
+.image_wrapper {
+position:absolute;
+width:50%;
+height:50%;
+margin-top:5%;
+right:0%;
+}
+.content_text {
+padding:15%;
+margin:15%;
+margin:5%;
+font-size:120%;
+}
+.opacImagText {
+background-color:rgba(0,0,0,.6);
+color:rgb(255,255,255);
+}
+
+.image_text:hover {
+transition: background-color .3s;
+background-color:rgba(100,130,160,.6);
+}
+
+.image_text {
+padding:30px;
+position:absolute;
+width:40%;
+right:0px;
+}
+.sub_image {
+position: absolute;
+left: 0px;
+top: 0px;
+width: 50%;
+height: 100%;
+}
+.textHead {
+width:40%;
+text-align:center;
+padding:25px;
+margin:5%;
+margin-bottom:0%;
+margin-top:5%;
+}
+
+
+.next_button:hover {
+transition: background-color .3s;
+background-color:rgba(100,130,160,.6);
+}
+
+.next_button {
+margin: 40px;
+margin-left: 0px;
+margin-right: 0px;
+padding:30px;
+color: rgb(255,255,255);
+text-align: center;
+}
+
+.image_section_wrapper {
+position:relative;
+margin:20px;
+height:250px;
+}
+
+</style>
+
+<script>
+
+$(document).ready(function() {
+	$('.page2').toggle();
+	$('.page3').toggle();
+	$('.page4').toggle();
+	$('.page5').toggle();
+
+	$('.b1').click(function(){
+		$('.page1').toggle();
+		$('.page2').toggle();
+	});
+
+	$('.b2').click(function(){
+		$('.page2').toggle();
+		$('.page3').toggle();
+	});
+
+	$('.b3').click(function(){
+		$('.page3').toggle();
+		$('.page4').toggle();
+	});
+
+	$('.b4').click(function(){
+		$('.page4').toggle();
+		$('.page5').toggle();
+	});
+
+	$('.b5').click(function(){
+		$('.page5').toggle();
+		$('.page1').toggle();
+	});
+});
+
+</script>
+
+<body>
+
+<div class="page1">
+
+	<span class="content_wrapper">
+		<h1 class="textHead opacImagText">What Can Green Energy Do?</h1>
+		<p class="content_text opacImagText">
+			text place holder keep talking abput stuf to fill up space and junnk like that we could jsut keep going and going and ogin afjadjfhadkjfh adhfkjadf kjasfkj ahdkjfhadskjfh adfkjdsfkjdshfkj adshfkjdskjfhadskjfakjdf blah blah blah blah blah blah jadshfj dfkjas kd adkjfadfakj kjdfkjdsf kjsdh kjadshfkjadhfkjadshfkj hadskjfhadkjfh
+		</p>
+	</span>
+
+	<span class="image_wrapper">
+		<div class="image_section_wrapper">
+			<img class="sub_image" src="blackBasic.jpg">
+			<p class="image_text opacImagText">
+				Image place holder text, this is the caption of the above image, keep talking for a bit but not as long as the text to the left
+			</p>
+		</div>
+		<div class="image_section_wrapper">
+			<img class="sub_image" src="blackBasic.jpg">
+			<p class="image_text opacImagText">
+				Image place holder text, this is the caption of the above image, keep talking for a bit but not as long as the text to the left
+			</p>
+		</div>
+
+		<div class="b1 next_button opacImagText">
+			<h1>But There Are Some Problems...</h1>
+		</div>
+	</span>
+
+</div>
+
+<div class="page2">
+
+	<span class="content_wrapper">
+		<h1 class="textHead opacImagText">Problems With Green Energy</h1>
+		<p class="content_text opacImagText">
+			text place holder keep talking abput stuf to fill up space and junnk like that we could jsut keep going and going and ogin afjadjfhadkjfh adhfkjadf kjasfkj ahdkjfhadskjfh adfkjdsfkjdshfkj adshfkjdskjfhadskjfakjdf blah blah blah blah blah blah jadshfj dfkjas kd adkjfadfakj kjdfkjdsf kjsdh kjadshfkjadhfkjadshfkj hadskjfhadkjfh
+		</p>
+	</span>
+
+	<span class="image_wrapper">
+		<div class="image_section_wrapper">
+			<img class="sub_image" src="blackBasic.jpg">
+			<p class="image_text opacImagText">
+				Image place holder text, this is the caption of the above image, keep talking for a bit but not as long as the text to the left
+			</p>
+		</div>
+		<div class="image_section_wrapper">
+			<img class="sub_image" src="blackBasic.jpg">
+			<p class="image_text opacImagText">
+				Image place holder text, this is the caption of the above image, keep talking for a bit but not as long as the text to the left
+			</p>
+		</div>
+
+		<div class="b2 next_button opacImagText">
+			<h1>There Are Solutions!</h1>
+		</div>
+	</span>
+
+</div>
+
+<div class="page3">
+
+	<span class="content_wrapper">
+		<h1 class="textHead opacImagText">Solutions To Those Problems</h1>
+		<p class="content_text opacImagText">
+			text place holder keep talking abput stuf to fill up space and junnk like that we could jsut keep going and going and ogin afjadjfhadkjfh adhfkjadf kjasfkj ahdkjfhadskjfh adfkjdsfkjdshfkj adshfkjdskjfhadskjfakjdf blah blah blah blah blah blah jadshfj dfkjas kd adkjfadfakj kjdfkjdsf kjsdh kjadshfkjadhfkjadshfkj hadskjfhadkjfh
+		</p>
+	</span>
+
+	<span class="image_wrapper">
+		<div class="image_section_wrapper">
+			<img class="sub_image" src="blackBasic.jpg">
+			<p class="image_text opacImagText">
+				Image place holder text, this is the caption of the above image, keep talking for a bit but not as long as the text to the left
+			</p>
+		</div>
+		<div class="image_section_wrapper">
+			<img class="sub_image" src="blackBasic.jpg">
+			<p class="image_text opacImagText">
+				Image place holder text, this is the caption of the above image, keep talking for a bit but not as long as the text to the left
+			</p>
+		</div>
+
+		<div class="b3 next_button opacImagText">
+			<h1>But There Are Some Problems Without Solutions</h1>
+		</div>
+	</span>
+
+</div>
+
+<div class="page4">
+
+	<span class="content_wrapper">
+		<h1 class="textHead opacImagText">The Future Of Green Energy For You</h1>
+		<p class="content_text opacImagText">
+			text place holder keep talking abput stuf to fill up space and junnk like that we could jsut keep going and going and ogin afjadjfhadkjfh adhfkjadf kjasfkj ahdkjfhadskjfh adfkjdsfkjdshfkj adshfkjdskjfhadskjfakjdf blah blah blah blah blah blah jadshfj dfkjas kd adkjfadfakj kjdfkjdsf kjsdh kjadshfkjadhfkjadshfkj hadskjfhadkjfh
+		</p>
+	</span>
+
+	<span class="image_wrapper">
+		<div class="image_section_wrapper">
+			<img class="sub_image" src="blackBasic.jpg">
+			<p class="image_text opacImagText">
+				Image place holder text, this is the caption of the above image, keep talking for a bit but not as long as the text to the left
+			</p>
+		</div>
+		<div class="image_section_wrapper">
+			<img class="sub_image" src="blackBasic.jpg">
+			<p class="image_text opacImagText">
+				Image place holder text, this is the caption of the above image, keep talking for a bit but not as long as the text to the left
+			</p>
+		</div>
+
+		<div class="b4 next_button opacImagText">
+			<h1>So What does this mean for me?</h1>
+		</div>
+	</span>
+
+</div>
+
+<div class="page5">
+
+	<span class="content_wrapper">
+		<h1 class="textHead opacImagText">What Green Energy Means For You</h1>
+		<p class="content_text opacImagText">
+			text place holder keep talking abput stuf to fill up space and junnk like that we could jsut keep going and going and ogin afjadjfhadkjfh adhfkjadf kjasfkj ahdkjfhadskjfh adfkjdsfkjdshfkj adshfkjdskjfhadskjfakjdf blah blah blah blah blah blah jadshfj dfkjas kd adkjfadfakj kjdfkjdsf kjsdh kjadshfkjadhfkjadshfkj hadskjfhadkjfh
+		</p>
+	</span>
+
+	<span class="image_wrapper">
+		<div class="image_section_wrapper">
+			<img class="sub_image" src="blackBasic.jpg">
+			<p class="image_text opacImagText">
+				Image place holder text, this is the caption of the above image, keep talking for a bit but not as long as the text to the left
+			</p>
+		</div>
+		<div class="image_section_wrapper">
+			<img class="sub_image" src="blackBasic.jpg">
+			<p class="image_text opacImagText">
+				Image place holder text, this is the caption of the above image, keep talking for a bit but not as long as the text to the left
+			</p>
+		</div>
+
+		<div class="b5 next_button opacImagText">
+			<h1>Tell Me Again (this is a place hodler)</h1>
+		</div>
+	</span>
+
+</div>
+
+</body>
+</html>
