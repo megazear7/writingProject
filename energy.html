@@ -29,6 +29,19 @@ background-color:rgba(0,0,0,.6);
 color:rgb(255,255,255);
 }
 
+.big_image {
+z-index:5;
+box-shadow: 25px 25px 40px #000;
+position:absolute;
+width:65%;
+height:65%;
+left:10%;
+top:10%;
+display:none;
+border-style:ridge;
+border-width:6px;
+}
+
 .image_text:hover {
 transition: background-color .3s;
 background-color:rgba(100,130,160,.6);
@@ -69,6 +82,8 @@ margin-right: 0px;
 padding:30px;
 color: rgb(255,255,255);
 text-align: center;
+border-style:ridge;
+border-width:4px;
 }
 
 .image_section_wrapper {
@@ -80,55 +95,194 @@ height:250px;
 .box {
 position:absolute;
 width:100%;
-height:100%;
+height:90%;
+top:10%;
 }
 
 .main_wrapper {
 position:absolute;
-width:99.5%;
-height:99%;
+width:98.5%;
+height:98%;
 overflow:hidden;
+overflow-y:scroll;
 }
 
+.banner {
+background-color: rgba(0, 0, 0, .5);
+width: 100%;
+position: absolute;
+top: 0%;
+left: 0%;
+height: 10%;
+}
+
+.banner_tab {
+text-align:center;
+color:#fff;
+font-weight:bold;
+font-size:150%;
+position:absolute;
+height:90%;
+width:15%;
+top:5%;
+}
+
+.banner_page_1 {
+left:2.5%;
+}
+.banner_page_2 {
+left:22.5%;
+}
+.banner_page_3 {
+left:40%;
+}
+.banner_page_4 {
+left:60%;
+}
+.banner_page_5 {
+left:80%;
+}
 </style>
 
 <script>
 
 $(document).ready(function() {
 
-	$('.page2').css("left","150%");
-	$('.page3').css("left","150%");
-	$('.page4').css("left","150%");
-	$('.page5').css("left","150%");
+	$('.box').css("left","150%");
+	$('.box').hide();
+	$('.page1').css("left","0%");
+	$('.page1').show();
 
-	$('.b1').click(function(){
-		$('.page1').animate({left:'-150%'});
+	$('.banner_page_1').css("background-color", "rgba(0,0,0,.2)");
+
+	$('.banner_page_1').click(function() {
+		$('.box').animate({left:'-150%'}, "100", "swing", function(){
+			$('.box').hide();	
+			$('.page1').show();
+		});
+		$('.page1').show();
+		$('.page1').css("left","150%");
+		$('.page1').animate({left:'0%'});
+		$('.banner_tab').css("background-color", "rgba(0,0,0,0)");
+		$('.banner_page_1').css("background-color", "rgba(0,0,0,.2)");
+	});
+	$('.banner_page_2').click(function() {
+		$('.box').animate({left:'-150%'}, "100", "swing", function(){
+			$('.box').hide();	
+			$('.page2').show();
+		});
+		$('.page2').show();
 		$('.page2').css("left","150%");
 		$('.page2').animate({left:'0%'});
+		$('.banner_tab').css("background-color", "rgba(0,0,0,0)");
+		$('.banner_page_2').css("background-color", "rgba(0,0,0,.2)");
+	});
+	$('.banner_page_3').click(function() {
+		$('.box').animate({left:'-150%'}, "100", "swing", function(){
+			$('.box').hide();	
+			$('.page3').show();
+		});
+		$('.page3').show();
+		$('.page3').css("left","150%");
+		$('.page3').animate({left:'0%'});
+		$('.banner_tab').css("background-color", "rgba(0,0,0,0)");
+		$('.banner_page_3').css("background-color", "rgba(0,0,0,.2)");
+	});
+	$('.banner_page_4').click(function() {
+		$('.box').animate({left:'-150%'}, "100", "swing", function(){
+			$('.box').hide();	
+			$('.page4').show();
+		});
+		$('.page4').show();
+		$('.page4').css("left","150%");
+		$('.page4').animate({left:'0%'});
+		$('.banner_tab').css("background-color", "rgba(0,0,0,0)");
+		$('.banner_page_4').css("background-color", "rgba(0,0,0,.2)");
+	});
+	$('.banner_page_5').click(function() {
+		$('.box').animate({left:'-150%'}, "100", "swing", function(){
+			$('.box').hide();	
+			$('.page5').show();
+		});
+		$('.page5').show();
+		$('.page5').css("left","150%");
+		$('.page5').animate({left:'0%'});
+		$('.banner_tab').css("background-color", "rgba(0,0,0,0)");
+		$('.banner_page_5').css("background-color", "rgba(0,0,0,.2)");
+	});
+	$('.b1').click(function(){
+		$('.box').animate({left:'-150%'}, "100", "swing", function(){
+			$('.box').hide();	
+			$('.page2').show();
+		});
+		$('.page2').show();
+		$('.page2').css("left","150%");
+		$('.page2').animate({left:'0%'});
+		$('.banner_tab').css("background-color", "rgba(0,0,0,0)");
+		$('.banner_page_2').css("background-color", "rgba(0,0,0,.2)");
 	});
 
 	$('.b2').click(function(){
-		$('.page2').animate({left:'-150%'});
+		$('.box').animate({left:'-150%'}, "100", "swing", function(){
+			$('.box').hide();	
+			$('.page3').show();
+		});
+		$('.page3').show();
 		$('.page3').css("left","150%");
 		$('.page3').animate({left:'0%'});
+		$('.banner_tab').css("background-color", "rgba(0,0,0,0)");
+		$('.banner_page_3').css("background-color", "rgba(0,0,0,.2)");
 	});
 
 	$('.b3').click(function(){
-		$('.page3').animate({left:'-150%'});
+		$('.box').animate({left:'-150%'}, "100", "swing", function(){
+			$('.box').hide();	
+			$('.page4').show();
+		});
+		$('.page4').show();
 		$('.page4').css("left","150%");
 		$('.page4').animate({left:'0%'});
+		$('.banner_tab').css("background-color", "rgba(0,0,0,0)");
+		$('.banner_page_4').css("background-color", "rgba(0,0,0,.2)");
 	});
 
 	$('.b4').click(function(){
-		$('.page4').animate({left:'-150%'});
+		$('.box').animate({left:'-150%'}, "100", "swing", function(){
+			$('.box').hide();	
+			$('.page5').show();
+		});
+		$('.page5').show();
 		$('.page5').css("left","150%");
 		$('.page5').animate({left:'0%'});
+		$('.banner_tab').css("background-color", "rgba(0,0,0,0)");
+		$('.banner_page_5').css("background-color", "rgba(0,0,0,.2)");
 	});
 
 	$('.b5').click(function(){
-		$('.page5').animate({left:'-150%'});
+		$('.box').animate({left:'-150%'}, "100", "swing", function(){
+			$('.box').hide();	
+			$('.page1').show();
+		});
+		$('.page1').show();
 		$('.page1').css("left","150%");
 		$('.page1').animate({left:'0%'});
+		$('.banner_tab').css("background-color", "rgba(0,0,0,0)");
+		$('.banner_page_1').css("background-color", "rgba(0,0,0,.2)");
+	});
+	$('.im_text_1').hover(function(){
+		$('.im_big_1').toggle();	
+	});
+	$('.im_text_2').hover(function(){
+		$('.im_big_2').toggle();	
+	});
+	$('.im_text_3').hover(function(){
+		$('.im_big_3').toggle();	
+	});
+	$('.im_text_4').hover(function(){
+		$('.im_big_4').toggle();	
+	});
+	$('.im_text_5').hover(function(){
+		$('.im_big_5').toggle();	
 	});
 });
 
@@ -138,12 +292,24 @@ $(document).ready(function() {
 
 <div class="main_wrapper">
 
+<div class="banner">
+<span class="banner_page_1 banner_tab">Green Energy Overview</span>
+<span class="banner_page_2 banner_tab">Problems With Green Energy</span>
+<span class="banner_page_3 banner_tab">Current Solutions</span>
+<span class="banner_page_4 banner_tab">Future Solutuions</span>
+<span class="banner_page_5 banner_tab">What it means for you</span>
+
+</div>
+
 <div class="box page1">
 
 	<span class="content_wrapper">
+
 		<h1 class="textHead opacImagText">What Can Green Energy Do?</h1>
+
 		<p class="content_text opacImagText">
-With the development of sustainable energy (which is also called renewable energy or green energy), Green energy play an increasingly important role in our daily life. So far there are three-generation technologies
+			With the development of sustainable energy (which is also called renewable energy or green energy), 
+			Green energy play an increasingly important role in our daily life. So far there are three-generation technologies
 			<ol class="content_text opacImagText">
 				<li>
 				First generation: Hydroelectric power, geothermal power and biomass briquettes.
@@ -161,10 +327,12 @@ With the development of sustainable energy (which is also called renewable energ
 		</p>
 	</span>
 
+	<img class="big_image im_big_1" src="Page1Graph.png">
+
 	<span class="image_wrapper">
 		<div class="image_section_wrapper">
 			<img class="sub_image" src="Page1Graph.png">
-			<p class="image_text opacImagText">
+			<p class="image_text opacImagText im_text_1">
 				Image place holder text, this is the caption of the above image, keep talking for a bit but not as long as the text to the left
 			</p>
 		</div>
@@ -192,10 +360,12 @@ With the development of sustainable energy (which is also called renewable energ
  		</p>
 	</span>
 
+	<img class="big_image im_big_2" src="blackBasic.jpg">
+
 	<span class="image_wrapper">
 		<div class="image_section_wrapper">
 			<img class="sub_image" src="blackBasic.jpg">
-			<p class="image_text opacImagText">
+			<p class="image_text opacImagText im_text_2">
 				Image place holder text, this is the caption of the above image, keep talking for a bit but not as long as the text to the left
 			</p>
 		</div>
@@ -221,10 +391,12 @@ With the development of sustainable energy (which is also called renewable energ
 
 	</span>
 
+	<img class="big_image im_big_3" src="Page3Solar.jpg">
+
 	<span class="image_wrapper">
 		<div class="image_section_wrapper">
 			<img class="sub_image" src="Page3Solar.jpg">
-			<p class="image_text opacImagText">
+			<p class="image_text opacImagText im_text_3">
 				Image place holder text, this is the caption of the above image, keep talking for a bit but not as long as the text to the left
 			</p>
 		</div>
@@ -249,10 +421,12 @@ Second, new green energy resources will provide people with more available and e
 		</p>
 	</span>
 
+	<img class="big_image im_big_4" src="Page1Graph.png">
+
 	<span class="image_wrapper">
 		<div class="image_section_wrapper">
-			<img class="sub_image" src="Page4Panel.jpg">
-			<p class="image_text opacImagText">
+			<img class="sub_image" src="page4panel.jpg">
+			<p class="image_text opacImagText im_text_4">
 				Image place holder text, this is the caption of the above image, keep talking for a bit but not as long as the text to the left
 			</p>
 		</div>
@@ -273,10 +447,12 @@ Through the content above, readers are able to get a basic understanding of the 
 		</p>
 	</span>
 
+	<img class="big_image im_big_5" src="Page5Diagram.jpg">
+
 	<span class="image_wrapper">
 		<div class="image_section_wrapper">
 			<img class="sub_image" src="Page5Diagram.jpg">
-			<p class="image_text opacImagText">
+			<p class="image_text opacImagText im_text_5">
 				Image place holder text, this is the caption of the above image, keep talking for a bit but not as long as the text to the left
 			</p>
 		</div>
