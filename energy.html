@@ -33,10 +33,10 @@ color:rgb(255,255,255);
 z-index:5;
 box-shadow: 25px 25px 40px #000;
 position:absolute;
-width:65%;
+width:45%;
 height:65%;
-left:10%;
-top:10%;
+right:10%;
+top:2.5%;
 display:none;
 border-style:ridge;
 border-width:6px;
@@ -155,6 +155,12 @@ left:80%;
 <script>
 
 $(document).ready(function() {
+
+	var bigWidth = $('.big_image').width();
+	$('.big_image').height(bigWidth);
+
+	var imageLeft = $('.sub_image').offset().left + $('.sub_image').width() - $('.big_image').width() - 30;
+	$('.big_image').css("left",imageLeft);
 
 	$('.box').css("left","150%");
 	$('.box').hide();
@@ -316,20 +322,18 @@ $(document).ready(function() {
 		<h1 class="textHead opacImagText">What Can Green Energy Do?</h1>
 
 		<p class="content_text opacImagText">
-			With the development of sustainable energy (which is also called renewable energy or green energy), 
-			Green energy play an increasingly important role in our daily life. So far there are three-generation technologies
+			Sustainable energy is an energy source that meets the needs of the present without compromising the ability of future generations to meet their needs. Green Energy is energy that can be extracted, generated, and/or consumed without any significant negative impact to the environment. Green energy includes natural energetic processes that can be harnessed with little pollution. The planet has a natural capability to recover which means energy pollution that does not go beyond that capability can still be termed green.
 			<ol class="content_text opacImagText">
 				<li>
-				First generation: Hydroelectric power, geothermal power and biomass briquettes.
-				The first generation contains least technological elements and is usually applied on large scale like dam and biomass reaction plant. For homeowners and small business owners, it is not practical in term of availability.
+					Hydroelectric power, geothermal power and biomass briquettes.
+					The first generation contains fewer elements than other renewable energy sources. First generation typically works on large scale projects like a dam or biomass reaction plant. This is not a practical solution for homeowners or small businesses in term of availability.
 				</li>
 				<li>
-				Second generation: Solar energy, wind energy and ethanol. (The stage we are in now).
-				The second generation is the technology that is most widely used so far. Solar panel and turbine are two most common technologies.
+					Solar energy, wind energy and ethanol.
+					Second generation is the most common renewable energy technology so far . Solar panels and turbines are two common technologies.
 				</li>
 				<li>
-				Third generation (which are not yet widely demonstrated): Bio-fuels, ocean tide energy and “Artificial leaf”, which can break water down to oxygen and hydrogen molecules.
-				Third generation is focus on solving the problems that second generation technologies have and develop new green energy resources to meet the huge demand of use of green energy.
+					o-fuels, ocean tide energy and “Artificial leaf”, which can break water into to oxygen and hydrogen molecules.Third generation focuses on overcoming the limitations of the second generation technologies and developing new green energy resources to meet the high demand of sustainable energy solutions.
 				</li>
 			</ol>
 		</p>
@@ -357,22 +361,23 @@ $(document).ready(function() {
 	<span class="content_wrapper">
 		<h1 class="textHead opacImagText">Problems With Green Energy</h1>
 		<p class="content_text opacImagText">
-		High cost and maintenance fee.
-		For example, depending the different size of solar panels, the cost is ranged from 3500 dollars to 20000 dollars excluding the installation fee and maintenance fee. Within the lifetime of a solar panel, the maintenance fee is about 10% to 15% of its cost. Compared to the return of investment on solar panel, install solar panel with high cost and low return of investment is not a practical and ideal choice.
+			High cost and maintenance.
+			Depending on the size of  the solar panels, the cost can range from $3,500 - $20,000 plus installation fee and maintenance fees. Throughout the lifetime of a solar panel, the maintenance fee can be up to 15% of its initial cost. This may not prove practical for small business or homeowners. Compared to commercial and public utility producers, the residential installation fee is higher for solar panels.
 		<br/>
- Place limitation.
- The access to green energy is another problem homeowners and small business may face. People live in city may have no place to install the green energy collection and restoration equipment like solar panel or turbine because high and dense building block the sunshine and wind at the most of time. Only citizens live in countryside or plain are equipped the natural conditions to install green energy equipment.
+			Geographic limitations
+			Access to green energy sources is another problem in implementation. Different areas have different sunshine illumination intensity. People living in northeast United States have weaker solar potential than people living in southwest area
+
  		<br/>
-		The economic effect of use of green energy.
-		Economic input of is greater than output, the installation cost and maintenance fee is way higher than the money saving from use of green energy. Take America for example, the annual electricity expense per person is 120-240 dollars. Within average lifetime of a solar panel, which is five years. The normal electricity expense is much lower than the all solar panel relevant fee minus the saving from use of solar panel.
+			Risk vs. Return.
+			The economic input of green energy solutions outweighs the money saved by using these energy sources. The installation cost and maintenance fee’s attribute to this difference in cost. America for example, has an annual electricity expense of $120 - $240 per person. The average lifespan of a solar panel is five years. The normal electricity expense is much lower than the all solar panel relevant fee minus the saving from use of solar panel.
  		</p>
 	</span>
 
-	<img class="big_image im_big_2" src="blackBasic.jpg">
+	<img class="big_image im_big_2" src="page2.jpg">
 
 	<span class="image_wrapper">
 		<div class="image_section_wrapper">
-			<img class="sub_image" src="blackBasic.jpg">
+			<img class="sub_image" src="page2.jpg">
 			<p class="image_text opacImagText im_text_2">
 				Image place holder text, this is the caption of the above image, keep talking for a bit but not as long as the text to the left
 			</p>
@@ -390,13 +395,12 @@ $(document).ready(function() {
 	<span class="content_wrapper">
 		<h1 class="textHead opacImagText">Solutions To Those Problems</h1>
 		<p class="content_text opacImagText">
-		Install solar panel or turbines in a whole community rather single house to reduce cost and improve the efficiency.
-		     In a village in Jamaica, whole village install a set of solar panels. By doing this way, the average expense for every family is much lower and overall efficiency is improved a lot. This is a valid solution to high installation expense.
+				Install solar panel or turbines in a whole community rather single house to reduce cost and improve the efficiency.
+				In a village in Jamaica,  several sets of solar panels were installed. As a result, the costs for each home were decreased and the overall efficiency of the solar panels were improved. This is a valid solution to high installation expenses.
 			 <br/>
-			 Remote solar panel.
-			 Remote solar panel is a best alternative so far. On the one hand, price of remote solar panel is below 1000 dollars, which are lower than traditional solar panels. On the other hand, remote solar panel can improve the efficiency. In the morning, remote solar panel can face toward the east side. And in the afternoon, you can adjust the position of solar panel by putting solar panel face the west side.
+				Remote solar panel.
+				Remote solar panel is the best alternative so far. This alternative allows for optimal sunlight absorption. These remote solar panels are less expensive than traditional solar panels. Also, remote solar panels can improve efficiency by adjusting the position of the panel by the position of the sun.
 		</p>
-
 	</span>
 
 	<img class="big_image im_big_3" src="Page3Solar.jpg">
@@ -421,19 +425,18 @@ $(document).ready(function() {
 	<span class="content_wrapper">
 		<h1 class="textHead opacImagText">The Future Of Green Energy For You</h1>
 		<p class="content_text opacImagText">
-With the development of third generation, the current problems can be solved. 
-First, scientists are developing a new synthetic silicon panel. New silicon panel will lower the cost (even the remote solar panel) and can be widely used by homeowners and small business owners.
-<br/>
-Second, new green energy resources will provide people with more available and economic access to green energy. For example, "Artificial Leaf" is a brand new technology, which is able to split water into hydrogen and oxygen directly from solar power when dropped into a glass of water and release huge amount of chemical energy. Within the equipment, a bubble of hydrogen is generated from one side of the "Artificial Leaf", while the other side produces bubbles of oxygen.
-
+				With the development of third generation, current problems are hopeful to find solutions. 
+				Scientists are developing a new synthetic silicon panel. The new silicon panel will lower the cost and making solar panels a practical solution for homeowners and small business owners.
+			<br/>
+				Second, new green energy resources will provide people with more available and economic access to green energy. For example, "Artificial Leaf" is a brand new technology, which is able to split water into hydrogen and oxygen directly from solar power when dropped into a glass of water and release huge amount of chemical energy. Within the equipment, a bubble of hydrogen is generated from one side of the "Artificial Leaf", while the other side produces bubbles of oxygen.
 		</p>
 	</span>
 
-	<img class="big_image im_big_4" src="Page1Graph.png">
+	<img class="big_image im_big_4" src="page4.jpg">
 
 	<span class="image_wrapper">
 		<div class="image_section_wrapper">
-			<img class="sub_image" src="page4panel.jpg">
+			<img class="sub_image" src="page4.jpg">
 			<p class="image_text opacImagText im_text_4">
 				Image place holder text, this is the caption of the above image, keep talking for a bit but not as long as the text to the left
 			</p>
@@ -451,15 +454,15 @@ Second, new green energy resources will provide people with more available and e
 	<span class="content_wrapper">
 		<h1 class="textHead opacImagText">What Green Energy Means For You</h1>
 		<p class="content_text opacImagText">
-Through the content above, readers are able to get a basic understanding of the current green energy situation and what kind of problems green energy users may face. We provide some current solutions and possible future solutions to these problems. If you plan to install green energy collection and restoration equipment, above information may provide some useful reference to balance the pros and cons.
+			We want our readers to establish a basic understanding of the current green energy situation and what problems users face. We have provided current solutions and the future outlook on remaining issues. If you plan to install green energy collection and restoration equipment, the information above should help to determine the most practical energy solution. 
 		</p>
 	</span>
 
-	<img class="big_image im_big_5" src="Page5Diagram.jpg">
+	<img class="big_image im_big_5" src="page5.gif">
 
 	<span class="image_wrapper">
 		<div class="image_section_wrapper">
-			<img class="sub_image" src="Page5Diagram.jpg">
+			<img class="sub_image" src="page5.gif">
 			<p class="image_text opacImagText im_text_5">
 				Image place holder text, this is the caption of the above image, keep talking for a bit but not as long as the text to the left
 			</p>
